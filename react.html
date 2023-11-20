@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+    <link rel="icon" href="react.png" type="image/icon type">
+    <link rel="stylesheet" href="react.css">
+</head>
+<body>
+    <div class="navign">
+        <div class="icon"><img src="react.png" alt="" class="logo"><h1>REACT</h1></div>
+        <div class="navigation">
+            <ul class="unorderedlist">
+                <li class="list active">
+                    <a href="index.html" target="_blank">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="text">Home</span>
+                    </a>
+                </li>
+                <li class="list ">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </span>
+                        <span class="text">Profile</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="chatbubble-outline"></ion-icon>
+                        </span>
+                        <span class="text">Message</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="image-outline"></ion-icon>
+                        </span>
+                        <span class="text">Photos</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="text">Settigs</span>
+                    </a>
+                </li>
+                <div class="indicator"></div>
+            </ul>
+        </div>
+    </div>
+    <div class="sec1">
+          <div class="pic">
+            <img src="reactpic.jpg" alt="React.js">
+          </div>
+          <div class="info">
+            <p>
+            React can be used to build web, mobile, and desktop applications, making it a versatile framework for 
+            cross-platform development. React Native, a framework based on React, is specifically designed for mobile 
+            app development, while React Desktop allows you to create desktop applications using web technologies.
+            </p>
+            <p>
+            One of the primary reasons for React's popularity is its ease of use. React uses a component-based 
+            architecture, which makes it easy to break down complex user interfaces into smaller, reusable parts.
+            </p>
+            <p>
+            React is a JavaScript library that's used for building reactive websites. While it's not a framework, 
+            React does have a dedicated framework called Create React App that can be used to build web applications    
+            </p>
+        </div>   
+    </div>
+    <div  class="footer">
+        <p>Copyright @ Sivaprasad K P 2023</p>
+
+    </div>
+    
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink(){
+            list.forEach((item) =>
+            item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+        item.addEventListener('click',activeLink));
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  
+</body>
+</html>
