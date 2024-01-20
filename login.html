@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="form">
+        <form action="react.html">
+            <p>
+                <span id="username-error"></span>
+                <br>
+                <i class='bx bxs-user'></i>
+                <input id="username" type="text" onkeyup="validateName()" placeholder="Enter Username">
+            </p>
+            <p>
+                
+                <span id="password-error"></span>
+                <br>
+                <i class='bx bxs-lock'></i>
+                <input id="password" type="password" onkeyup="validatePassword()" placeholder=" Enter password">
+            </p>
+            <span id="submit-error"></span>
+            <br>
+            <button id="submit" type="submit" onclick="return validateForm()">Log In</button>
+            <br><br>
+            <button id="submit"  type="submit"><a href="register.html" class="sign-up" >Sign Up</a></button>
+            <hr>
+            <p ><a href="" id="fpassword">Forgot Password ?</a></p>
+        </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

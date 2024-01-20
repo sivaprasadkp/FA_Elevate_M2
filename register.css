@@ -1,0 +1,52 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(registerbackground.jpg);
+
+    background-size: cover;
+}
+span{
+
+    color: red;
+}
+.form{
+    background: blur;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 400px;
+    border: solid cyan;
+    border-radius: 10%;
+    backdrop-filter: blur(5px);
+    
+}
+label{
+    display: inline-block;
+}
+#submit{
+    
+    border: solid pink;
+    color: rgb(251, 36, 126);
+    width: 80px;
+    border-radius: 10px;
+    margin-left: 73px;
+    background: transparent;
+}
+i{
+    font-size: larger;
+    color: rgb(251, 36, 126);
+}
+input{
+    color: rgb(251, 36, 126);
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid;
+}
+.home{
+    color: rgb(251, 36, 126);
+    font-size: 20px;
+}
